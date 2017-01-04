@@ -25,7 +25,8 @@ def square(num):
 
 def cube(num):
     """Return the cube of a number"""
-    pass
+    result = num ** 3
+    return result
 
 def power(num, exponent):
     """Return num raised to the power of exponent"""
