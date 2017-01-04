@@ -1,11 +1,12 @@
 def add(num1, num2):
     """Return the sum of two numbers"""
     result = num1 + num2
-    return num1 + num2
+    return result
 
 def subtract(num1, num2):
     """Return the difference of two numbers"""
-    pass
+    result = num1 - num2
+    return result
 
 def multiply(num1, num2):
     """Return the product of two numbers"""
