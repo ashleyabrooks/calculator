@@ -1,39 +1,38 @@
 def add(num1, num2):
     """Return the sum of two numbers"""
-    result = num1 + num2
-    return result
+    return num1 + num2
+
 
 def subtract(num1, num2):
     """Return the difference of two numbers"""
-    result = num1 - num2
-    return result
+    return num1 - num2
+
 
 def multiply(num1, num2):
     """Return the product of two numbers"""
-    result = num1 * num2
-    return result
+    return num1 * num2
+
 
 def divide(num1, num2):
     """Return the quotient of two numbers as a float"""
-    result = float(num1) / float(num2)
-    return result
+    return float(num1) / float(num2)
+
 
 def square(num):
     """Return the square of a number"""
-    result = num ** 2
-    return result
+    return num ** 2
+
 
 def cube(num):
     """Return the cube of a number"""
-    result = num ** 3
-    return result
+    return num ** 3
+
 
 def power(num, exponent):
     """Return num raised to the power of exponent"""
-    result = num ** exponent
-    return result
+    return num ** exponent
+
 
 def mod(num1, num2):
     """Return remainder of num1 divided by num2"""
-    result = num1 % num2
-    return result
+    return num1 % num2
