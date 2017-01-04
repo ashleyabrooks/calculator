@@ -10,7 +10,8 @@ def subtract(num1, num2):
 
 def multiply(num1, num2):
     """Return the product of two numbers"""
-    pass
+    result = num1 * num2
+    return result
 
 def divide(num1, num2):
     """Return the quotient of two numbers as a float"""
