@@ -35,4 +35,5 @@ def power(num, exponent):
 
 def mod(num1, num2):
     """Return remainder of num1 divided by num2"""
-    pass
+    result = num1 % num2
+    return result
