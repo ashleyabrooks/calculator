@@ -15,7 +15,8 @@ def multiply(num1, num2):
 
 def divide(num1, num2):
     """Return the quotient of two numbers as a float"""
-    pass
+    result = float(num1) / float(num2)
+    return result
 
 def square(num):
     """Return the square of a number"""
