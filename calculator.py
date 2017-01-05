@@ -3,16 +3,24 @@ from arithmetic import *
 while True:
     user_input = raw_input("> ")
     tokens = user_input.split()
+    infinite = []
 
     if tokens[0] == 'q':
         break
 
+    int_tokens = tokens[1:]
+    for i in int_tokens:
+        number = float(i)
+        infinite.append(number)
+
+    # return number
+
     if tokens[0] == '+':
-        print add(int(tokens[1]), int(tokens[2]))
+        print reduce(add, infinite)
     elif tokens[0] == '-':
-        print subtract(int(tokens[1]), int(tokens[2]))
+        print reduce(subtract, infinite)
     elif tokens[0] == '*':
-        print multiply(int(tokens[1]), int(tokens[2]))
+        print reduce(multiply, infinite)
     elif tokens[0] == '/':
         print divide(int(tokens[1]), int(tokens[2]))
     elif tokens[0] == 'square':

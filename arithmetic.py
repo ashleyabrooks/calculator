@@ -1,12 +1,16 @@
 def add(num1, num2):
     """Return the sum of two numbers"""
-    return num1 + num2
+    # total = 0
+    # for i in args:
+    #     total += i
+    # return total
+    return round((num1 + num2), 2)
 
 
 def subtract(num1, num2):
     """Return the difference of two numbers"""
     return num1 - num2
-    
+
 
 def multiply(num1, num2):
     """Return the product of two numbers"""
@@ -36,3 +40,4 @@ def power(num, exponent):
 def mod(num1, num2):
     """Return remainder of num1 divided by num2"""
     return num1 % num2
+
