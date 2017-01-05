@@ -1,8 +1,12 @@
 from arithmetic import *
+input_file = open("calculator_data.txt")
 
 while True:
-    user_input = raw_input("> ")
-    tokens = user_input.split()
+    # user_input = raw_input("> ")
+    user_input = input_file
+
+    for line in input_file:
+        tokens = line.split()
     infinite = []
 
     if tokens[0] == 'q':
@@ -17,6 +21,7 @@ while True:
 
     if tokens[0] == '+':
         print reduce(add, infinite)
+        exit()
     elif tokens[0] == '-':
         print reduce(subtract, infinite)
     elif tokens[0] == '*':
@@ -33,3 +38,5 @@ while True:
         print mod(int(tokens[1]), int(tokens[2]))
     else:
         print "I don't understand that input"
+
+# figure out why the program didn't stop after reading the file
